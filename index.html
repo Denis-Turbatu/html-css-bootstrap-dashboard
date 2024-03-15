@@ -11,19 +11,19 @@
 
 <body>
     <!-- HEADER -->
-    <header>
+    <header class="shadow-lg">
         <nav class="navbar navbar-expand-md collapse d-block d-md-none bg-dark" data-bs-theme="dark">
             <!-- Container -->
-            <div class="container">
+            <div class="container-md">
                 <!-- brand -->
-                <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+                <a class="navbar-brand fw-semibold" href="#">Bootstrap Dashboard</a>
                 <!-- /brand -->
 
                 <!-- Hamburger button -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler px-3 py-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
+                    <i class="fa-solid fa-bars"></i>
                 </button>
                 <!-- /Hamburger button -->
             </div>
@@ -37,53 +37,39 @@
         <div class="row">
             <!-- Sidebar -->
             <div id="navbarSupportedContent" class="sidebar collapse vh-100 col-md-4 col-lg-3 d-md-block bg-dark">
-                Logo Sidebar
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                    <svg class="bi pe-none me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap"></use>
-                    </svg>
-                    <span class="fs-4">Bootstrap Dashboard</span>
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none border-bottom border-2 border-secondary border-opacity-50">
+                    <span class="fs-4 mb-4 mt-5">Bootstrap Dashboard</span>
                 </a>
                 <hr />
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
                         <a href="#" class="nav-link active" aria-current="page">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#home"></use>
-                            </svg>
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#speedometer2"></use>
-                            </svg>
+                            <i class="fa-solid fa-house me-2"></i>
                             Dashboard
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#table"></use>
-                            </svg>
-                            Orders
+                            <i class="fa-solid fa-chart-line me-2"></i>
+                            Sponsorizzazione
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#grid"></use>
-                            </svg>
-                            Products
+                            <i class="fa-solid fa-folder me-2"></i>
+                            Prodotti
                         </a>
                     </li>
                     <li>
                         <a href="#" class="nav-link text-white">
-                            <svg class="bi pe-none me-2" width="16" height="16">
-                                <use xlink:href="#people-circle"></use>
-                            </svg>
-                            Customers
+                            <i class="fa-solid fa-plus me-2"></i>
+                            Nuovo Prodotto
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <i class="fa-solid fa-user me-2"></i>
+                            Clienti
                         </a>
                     </li>
                 </ul>
@@ -93,7 +79,7 @@
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="" width="32" height="32"
                             class="rounded-circle me-2" />
-                        <strong>User_name</strong>
+                        <strong>_Username_</strong>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
                         <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -113,9 +99,13 @@
         </div>
     </div>
     <!-- /DASHBOARD -->
+
+    <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- Fontawesome script -->
+    <script src="https://kit.fontawesome.com/84174ae206.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
