@@ -85,21 +85,21 @@
                     </li>
                 </ul>
                 <hr />
-                <div class="dropdown">
+                <div class="dropdown pb-3">
                     <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://github.com/mdo.png" alt="" width="32" height="32"
                             class="rounded-circle me-2" />
                         <strong>_Username_</strong>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-                        <li><a class="dropdown-item" href="#">New project...</a></li>
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <ul
+                        class="dropdown-menu dropdown-menu-dark text-small shadow border border-bottom border-secondary">
+                        <li class=""><a class="dropdown-item" href="#">Impostazioni</a></li>
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
                         <li>
-                            <hr class="dropdown-divider" />
+                            <hr class="dropdown-divider border border-bottom border-secondary" />
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" href="#">Disconettiti</a></li>
                     </ul>
                 </div>
             </div>
@@ -109,11 +109,13 @@
                     <h2>10 prodotti trovati</h2>
                     <div>
                         <span class="border p-2 border-1 border-secondary rounded-start-2">
-                        <button class="border-0 bg-white text-secondary">Esporta</button>
-                    </span>
-                    <span class="border p-2 border-1 border-secondary rounded-end-2">
-                        <button class="border-0 bg-white text-secondary">Nuovo</button>
-                    </span>
+                            <button class="border-0 bg-white text-secondary">Esporta</button>
+                        </span>
+                        <span class="border p-2 border-1 border-secondary rounded-end-2">
+                            <button class="border-0 bg-white text-secondary">
+                                <a href="./form.html" class="text-decoration-none text-secondary">Nuovo</a>
+                            </button>
+                        </span>
                     </div>
                 </div>
                 <table class="table col-12">
@@ -142,10 +144,48 @@
                             </td>
                             <!-- azioni -->
                             <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1 text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1 text-danger border border-1 border-danger rounded p-1"></i></span>
+                                <span>
+                                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-pencil p-1"></i>
+                                    </button>
+                                </span>
+                                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
                             </td>
                         </tr>
                         <!-- 2 -->
@@ -164,194 +204,538 @@
                             </td>
                             <!-- azioni -->
                             <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 3 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                Smartwatch Apple Watch Series 6
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €429,00
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 4 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                Auricolari Wireless Apple AirPods Pro
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €279,00
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 5 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                Console Sony PlayStation 5
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €499,00
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 6 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                Monitor Gaming ASUS ROG Strix XG27UQ
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €999,00
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 7 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                Stampante Multifunzione HP LaserJet Pro MFP M28w
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €159,00
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-xmark fs-3 text-danger"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 8 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                Router Wi-Fi Mesh TP-Link Deco X20
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €199,00
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 9 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                SSD NVMe Western Digital Black SN850
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €229,00
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                        <!-- 10 -->
-                        <tr>
-                            <!-- nome -->
-                            <td class="col-10 col-sm-8 col-md-7">
-                                Mouse Gaming Logitech G502 HERO
-                            </td>
-                            <!-- prezzo -->
-                            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
-                                €79,99
-                            </td>
-                            <!-- stato -->
-                            <td class="d-none d-md-table-cell col-md-1 text-center">
-                                <i class="fa-regular fa-circle-xmark fs-3 text-danger"></i>
-                            </td>
-                            <!-- azioni -->
-                            <td class="col-2 col-sm-2 col-md-2 text-center">
-                                <span><i
-                                        class="fa-solid fa-pencil text-primary border border-1 border-primary rounded p-1"></i></span>
-                                <span><i
-                                        class="fa-solid fa-trash-can text-danger border border-1 border-danger rounded p-1"></i></span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <!-- Btn pencil -->
+                                <span>
+                                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-pencil p-1"></i>
+                                    </button>
+                                </span>
+                                <!-- Btn pencil -->
+                                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
 
-            </main>
-            <!-- /MAIN -->
-        </div>
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+        </td>
+        </tr>
+        <!-- 3 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                Smartwatch Apple Watch Series 6
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €429,00
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        <!-- 4 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                Auricolari Wireless Apple AirPods Pro
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €279,00
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        <!-- 5 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                Console Sony PlayStation 5
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €499,00
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        <!-- 6 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                Monitor Gaming ASUS ROG Strix XG27UQ
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €999,00
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        <!-- 7 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                Stampante Multifunzione HP LaserJet Pro MFP M28w
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €159,00
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-xmark fs-3 text-danger"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        <!-- 8 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                Router Wi-Fi Mesh TP-Link Deco X20
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €199,00
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        <!-- 9 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                SSD NVMe Western Digital Black SN850
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €229,00
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-check fs-3 text-success"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        <!-- 10 -->
+        <tr>
+            <!-- nome -->
+            <td class="col-10 col-sm-8 col-md-7">
+                Mouse Gaming Logitech G502 HERO
+            </td>
+            <!-- prezzo -->
+            <td class="d-none d-sm-table-cell col-sm-2 col-md-2 text-center">
+                €79,99
+            </td>
+            <!-- stato -->
+            <td class="d-none d-md-table-cell col-md-1 text-center">
+                <i class="fa-regular fa-circle-xmark fs-3 text-danger"></i>
+            </td>
+            <!-- azioni -->
+            <td class="col-2 col-sm-2 col-md-2 text-center">
+                <span>
+                    <button class="btn btn-outline-primary px-1 py-1 border-0" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        <i class="fa-solid fa-pencil p-1"></i>
+                    </button>
+                </span>
+                <span>
+                                    <!-- Btn modal -->
+                                    <button class="btn btn-outline-danger px-1 py-1 border-0" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <i class="fa-solid fa-trash-can p-1"></i>
+                                    </button>
+                                    <!-- Btn modal -->
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h2 class="fs-4">Elimina Articolo</h2>
+                                                    <p>L'eliminazione sarà irreversibile, sei sicuro?</p>
+                                                </div>
+                                                <div class="modal-footer flex-nowrap p-0">
+                                                    <div class="w-50 h-100 m-0 p-0 border-end border-secondary border-opacity-25">
+
+                                                        <div class="w-100 h-100 my-3">
+                                                            <button type="button" 
+                                                                class="btn btn-white w-50 h-100 p-0">Si, continua</button>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="w-50 mh-100 my-3">
+                                                        <button type="button" data-bs-dismiss="modal" class="btn btn-white w-50 h-100 p-0">Annulla</button>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Modal -->
+                                </span>
+            </td>
+        </tr>
+        </tbody>
+        </table>
+
+        </main>
+        <!-- /MAIN -->
+    </div>
     </div>
     <!-- /DASHBOARD -->
 
